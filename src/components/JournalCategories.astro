@@ -1,25 +1,25 @@
 ---
-import { withBase } from "../lib/paths";
+import { categoryLabel, getCategories } from "../lib/posts";
+import { categoryPath } from "../lib/paths";
 
 interface Props {
-  current: "journal" | "places" | "notes";
+  current?: string;
 }
 
 const { current } = Astro.props;
-const links = [
-  { id: "journal", label: "JOURNAL", href: withBase("journal/") },
-  { id: "places", label: "PLACES", href: withBase("places/") },
-  { id: "notes", label: "NOTES", href: withBase("notes/") },
-] as const;
+const categories = await getCategories();
 ---
 
 <nav class="journal-categories" aria-label="Journal categories">
   <ul>
     {
-      links.map((link) => (
+      categories.map((category) => (
         <li>
-          <a href={link.href} aria-current={current === link.id ? "page" : undefined}>
-            {link.label}
+          <a
+            href={categoryPath(category)}
+            aria-current={current === category ? "page" : undefined}
+          >
+            {categoryLabel(category)}
           </a>
         </li>
       ))

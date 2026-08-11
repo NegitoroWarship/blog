@@ -9,3 +9,9 @@ export function withBase(path = ""): string {
 export function postPath(id: string): string {
   return withBase(`posts/${id}/`);
 }
+
+export function categoryPath(category: string): string {
+  return category === "journal"
+    ? withBase("journal/")
+    : withBase(`${category}/`);
+}

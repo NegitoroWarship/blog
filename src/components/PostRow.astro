@@ -1,7 +1,7 @@
 ---
 import type { BlogPost } from "../lib/posts";
-import { categoryLabels, formatDate } from "../lib/posts";
-import { postPath } from "../lib/paths";
+import { categoryLabel, formatDate } from "../lib/posts";
+import { categoryPath, postPath } from "../lib/paths";
 
 interface Props {
   post: BlogPost;
@@ -12,9 +12,12 @@ const { post } = Astro.props;
 
 <article class="post-row">
   <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
-  <span class:list={["category", `category-${post.data.category}`]}>
-    {categoryLabels[post.data.category]}
-  </span>
+  <a
+    class:list={["category", `category-${post.data.category}`]}
+    href={categoryPath(post.data.category)}
+  >
+    {categoryLabel(post.data.category)}
+  </a>
   <h2><a href={postPath(post.id)}>{post.data.title}</a></h2>
   <p>{post.data.description}</p>
   <a class="arrow-link" href={postPath(post.id)} aria-label={`Read ${post.data.title}`}>
@@ -37,6 +40,17 @@ const { post } = Astro.props;
     font-family: var(--font-sans);
     font-size: 0.68rem;
     letter-spacing: 0.12em;
+  }
+
+  .category {
+    color: var(--color-muted);
+    text-decoration-color: transparent;
+    text-underline-offset: 0.3rem;
+  }
+
+  .category:hover {
+    color: var(--color-clay);
+    text-decoration-color: currentColor;
   }
 
   .category-journal { color: var(--color-clay); }

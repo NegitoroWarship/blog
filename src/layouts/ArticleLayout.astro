@@ -1,6 +1,7 @@
 ---
 import type { BlogPost } from "../lib/posts";
-import { categoryLabels, formatDate } from "../lib/posts";
+import { categoryLabel, formatDate } from "../lib/posts";
+import { categoryPath } from "../lib/paths";
 import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
@@ -14,7 +15,7 @@ const { title, description, pubDate, updatedDate, category, tags, language } = p
 <BaseLayout title={title} description={description} type="article" language={language}>
   <article class="article">
     <header class="article-header">
-      <p class="eyebrow">{categoryLabels[category]}</p>
+      <a class="eyebrow" href={categoryPath(category)}>{categoryLabel(category)}</a>
       <h1>{title}</h1>
       <p class="dek">{description}</p>
       <div class="article-meta">
@@ -50,10 +51,17 @@ const { title, description, pubDate, updatedDate, category, tags, language } = p
 
   .eyebrow {
     color: var(--color-clay);
+    display: inline-block;
     font-family: var(--font-sans);
     font-size: 0.68rem;
     letter-spacing: 0.2em;
     margin: 0 0 1.4rem;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.3rem;
+  }
+
+  .eyebrow:hover {
+    text-decoration-color: currentColor;
   }
 
   h1 {

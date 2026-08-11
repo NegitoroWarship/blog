@@ -9,7 +9,14 @@ const blog = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
-    category: z.enum(["journal", "places", "notes"]),
+    category: z
+      .string()
+      .trim()
+      .min(1)
+      .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "Use a lowercase URL-friendly category name.")
+      .refine((category) => !["about", "posts"].includes(category), {
+        message: "This category name is reserved by the site.",
+      }),
     language: z.enum(["en", "ja"]).default("en"),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),

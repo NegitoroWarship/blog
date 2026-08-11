@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import PostRow from "../components/PostRow.astro";
 import courtyard from "../assets/monsoon-courtyard.png";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { categoryLabels } from "../lib/posts";
+import { categoryLabel } from "../lib/posts";
 import { getPublishedPosts } from "../lib/posts";
 import { postPath, withBase } from "../lib/paths";
 
@@ -17,7 +17,7 @@ const remainingPosts = posts.filter((post) => post.id !== featured?.id);
     featured ? (
       <section class="feature" aria-labelledby="feature-title">
         <div class="feature-copy">
-          <p class="eyebrow">{categoryLabels[featured.data.category]}</p>
+          <p class="eyebrow">{categoryLabel(featured.data.category)}</p>
           <h1 id="feature-title">{featured.data.title}</h1>
           <p class="feature-description">{featured.data.description}</p>
           <a class="read-more" href={postPath(featured.id)}>

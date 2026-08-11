@@ -1,8 +1,10 @@
 ---
+import { getCategories } from "../lib/posts";
+import { categoryPath } from "../lib/paths";
 import { withBase } from "../lib/paths";
 
 const currentPath = Astro.url.pathname;
-const journalPaths = [withBase("journal/"), withBase("places/"), withBase("notes/")];
+const journalPaths = (await getCategories()).map(categoryPath);
 const links = [
   {
     label: "JOURNAL",

@@ -29,6 +29,8 @@ pnpm preview
 
 Add articles as Markdown files in `src/content/blog`. Set `draft: true` in the front matter for anything that is not ready to publish.
 
+Categories are generated automatically from published articles. Use a lowercase URL-friendly value such as `books` or `field-notes`; its navigation link and archive page will be created during the build. The initial `journal`, `places`, and `notes` categories remain available even when empty.
+
 ```yaml
 ---
 title: Article title

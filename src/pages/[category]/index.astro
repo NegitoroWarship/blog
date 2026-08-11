@@ -1,0 +1,27 @@
+---
+import JournalCategories from "../../components/JournalCategories.astro";
+import PostRow from "../../components/PostRow.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { categoryTitle, getCategories, getPublishedPosts } from "../../lib/posts";
+
+export async function getStaticPaths() {
+  const categories = (await getCategories()).filter((category) => category !== "journal");
+
+  return categories.map((category) => ({ params: { category } }));
+}
+
+const category = Astro.params.category ?? "";
+const title = categoryTitle(category);
+const posts = (await getPublishedPosts()).filter((post) => post.data.category === category);
+---
+
+<BaseLayout title={title} description={`Articles filed under ${title}.`}>
+  <section class="section-page">
+    <header class="section-heading">
+      <h1>{title}</h1>
+      <p>Articles filed under {title.toLowerCase()}.</p>
+    </header>
+    <JournalCategories current={category} />
+    <div>{posts.map((post) => <PostRow post={post} />)}</div>
+  </section>
+</BaseLayout>
