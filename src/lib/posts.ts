@@ -2,8 +2,6 @@ import { getCollection, type CollectionEntry } from "astro:content";
 
 export type BlogPost = CollectionEntry<"blog">;
 
-export const initialCategories = ["journal", "places", "notes"] as const;
-
 export async function getPublishedPosts(): Promise<BlogPost[]> {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
 
@@ -14,11 +12,8 @@ export async function getPublishedPosts(): Promise<BlogPost[]> {
 
 export async function getCategories(): Promise<string[]> {
   const posts = await getPublishedPosts();
-  const discoveredCategories = [...new Set(posts.map((post) => post.data.category))]
-    .filter((category) => !initialCategories.includes(category as (typeof initialCategories)[number]))
+  return [...new Set(posts.map((post) => post.data.category))]
     .sort((a, b) => a.localeCompare(b));
-
-  return [...initialCategories, ...discoveredCategories];
 }
 
 export function formatDate(date: Date): string {
