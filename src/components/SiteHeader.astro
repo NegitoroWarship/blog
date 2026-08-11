@@ -1,0 +1,120 @@
+---
+import { withBase } from "../lib/paths";
+
+const currentPath = Astro.url.pathname;
+const links = [
+  { label: "JOURNAL", href: withBase("journal/") },
+  { label: "PLACES", href: withBase("places/") },
+  { label: "NOTES", href: withBase("notes/") },
+  { label: "ABOUT", href: withBase("about/") },
+];
+---
+
+<header class="site-header">
+  <div class="masthead-row">
+    <a class="brand" href={withBase()} aria-label="Monsoon Letter ホーム">
+      <span class="brand-name">Monsoon Letter</span>
+      <span class="brand-subtitle">雨季の木陰で読む、小さな旅行・技術誌</span>
+    </a>
+
+    <nav aria-label="メインナビゲーション">
+      <ul>
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                aria-current={currentPath.startsWith(link.href) ? "page" : undefined}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-line);
+    padding: 2.4rem 0 1.5rem;
+  }
+
+  .masthead-row {
+    align-items: flex-end;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .brand {
+    color: inherit;
+    display: grid;
+    gap: 0.2rem;
+    text-decoration: none;
+  }
+
+  .brand-name {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 7vw, 6.25rem);
+    font-weight: 400;
+    letter-spacing: -0.045em;
+    line-height: 0.9;
+  }
+
+  .brand-subtitle {
+    font-family: var(--font-serif-ja);
+    font-size: clamp(0.76rem, 1.2vw, 0.94rem);
+    letter-spacing: 0.12em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.65rem;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0.45rem;
+  }
+
+  nav a {
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    padding-block: 0.35rem;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.35rem;
+  }
+
+  nav a:hover,
+  nav a[aria-current="page"] {
+    color: var(--color-clay);
+    text-decoration-color: currentColor;
+  }
+
+  @media (max-width: 760px) {
+    .site-header {
+      padding-top: 1.5rem;
+    }
+
+    .masthead-row {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1.35rem;
+    }
+
+    .brand-name {
+      font-size: clamp(3rem, 15vw, 4.9rem);
+    }
+
+    nav ul {
+      gap: 1rem 1.4rem;
+      justify-content: flex-start;
+      padding-bottom: 0;
+    }
+  }
+</style>

@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="About" description="Monsoon Letterについて。">
+  <section class="about section-page">
+    <header class="section-heading">
+      <h1>About</h1>
+      <p>雨季の木陰で読む、小さな旅行・技術誌。</p>
+    </header>
+
+    <div class="about-body">
+      <p>
+        Monsoon Letterは、旅と技術のあいだにある静かな時間を記録する個人誌です。
+        東南アジアの街や建築、日々使う道具、Webをつくることについて書きます。
+      </p>
+      <p>
+        急いで結論へ向かうのではなく、雨宿りをするように立ち止まって読める場所を目指しています。
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .about-body {
+    font-family: var(--font-serif-ja);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 2.25;
+    margin-left: min(20vw, 17rem);
+    max-width: 45rem;
+  }
+
+  @media (max-width: 720px) {
+    .about-body {
+      margin-left: 0;
+    }
+  }
+</style>

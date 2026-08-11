@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../lib/paths";
+---
+
+<BaseLayout title="404" description="ページが見つかりませんでした。">
+  <section class="not-found">
+    <p class="code">404</p>
+    <h1>雨が止むまで、ここには何もありません。</h1>
+    <a href={withBase()}>ホームへ戻る</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    padding: clamp(5rem, 15vw, 12rem) 0;
+    text-align: center;
+  }
+
+  .code {
+    color: var(--color-clay);
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+  }
+
+  h1 {
+    font-family: var(--font-serif-ja);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  a {
+    color: var(--color-indigo);
+    text-underline-offset: 0.3rem;
+  }
+</style>

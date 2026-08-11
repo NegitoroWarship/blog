@@ -1,0 +1,17 @@
+---
+import PostRow from "../../components/PostRow.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPublishedPosts } from "../../lib/posts";
+
+const posts = await getPublishedPosts();
+---
+
+<BaseLayout title="Journal" description="旅と技術についてのすべての記事。">
+  <section class="section-page">
+    <header class="section-heading">
+      <h1>Journal</h1>
+      <p>移動すること、つくること、立ち止まること。その間に見つけたものを記録します。</p>
+    </header>
+    <div>{posts.map((post) => <PostRow post={post} />)}</div>
+  </section>
+</BaseLayout>
