@@ -3,11 +3,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { withBase } from "../lib/paths";
 ---
 
-<BaseLayout title="404" description="ページが見つかりませんでした。">
+<BaseLayout title="404" description="Page not found.">
   <section class="not-found">
     <p class="code">404</p>
-    <h1>雨が止むまで、ここには何もありません。</h1>
-    <a href={withBase()}>ホームへ戻る</a>
+    <h1>There is nothing here but the sound of rain.</h1>
+    <a href={withBase()}>Return home</a>
   </section>
 </BaseLayout>
 
@@ -24,7 +24,7 @@ import { withBase } from "../lib/paths";
   }
 
   h1 {
-    font-family: var(--font-serif-ja);
+    font-family: var(--font-serif);
     font-size: clamp(1.8rem, 4vw, 3rem);
     font-weight: 400;
     line-height: 1.8;

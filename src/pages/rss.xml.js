@@ -6,7 +6,7 @@ export async function GET(context) {
 
   return rss({
     title: "Monsoon Letter",
-    description: "雨季の木陰で読む、小さな旅行・技術誌。",
+    description: "Travel, tools, and quiet technology.",
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,
@@ -14,6 +14,6 @@ export async function GET(context) {
       pubDate: post.data.pubDate,
       link: `posts/${post.id}/`,
     })),
-    customData: "<language>ja</language>",
+    customData: "<language>en</language>",
   });
 }

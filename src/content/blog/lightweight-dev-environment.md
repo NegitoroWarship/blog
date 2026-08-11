@@ -3,6 +3,7 @@ title: 旅の荷物を軽くする、開発環境と考え方
 description: 最小限の道具でも仕事を止めないために、ブラウザとGitを中心にした小さな開発環境を考える。
 pubDate: 2026-07-02
 category: notes
+language: ja
 tags:
   - 開発環境
   - Git

@@ -3,6 +3,7 @@ title: ペナンの古い店で、雨宿りをする午後
 description: 旧市街の路地裏、小さな本屋とコーヒーの香り。雨音が遠くの喧騒をやわらげてくれる。
 pubDate: 2026-07-18
 category: places
+language: ja
 tags:
   - ペナン
   - 街歩き

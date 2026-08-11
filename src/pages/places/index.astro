@@ -6,11 +6,11 @@ import { getPublishedPosts } from "../../lib/posts";
 const posts = (await getPublishedPosts()).filter((post) => post.data.category === "places");
 ---
 
-<BaseLayout title="Places" description="街、建築、食卓、雨宿りの記録。">
+<BaseLayout title="Places" description="Field notes on cities, architecture, tables, and shelter from the rain.">
   <section class="section-page">
     <header class="section-heading">
       <h1>Places</h1>
-      <p>街の輪郭、古い建物の手触り、雨上がりの匂い。場所から受け取った小さな記憶。</p>
+      <p>City outlines, timeworn buildings, and the scent after rain—small memories gathered from place.</p>
     </header>
     <div>{posts.map((post) => <PostRow post={post} />)}</div>
   </section>

@@ -3,6 +3,7 @@ title: 雨が建築をやさしくする、庭と軒先の時間
 description: 雨季の街では、雨はただの通り雨ではなく、建築や暮らしのリズムを静かに整えてくれる。
 pubDate: 2026-08-11
 category: journal
+language: ja
 tags:
   - 建築
   - 雨季

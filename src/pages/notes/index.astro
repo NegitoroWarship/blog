@@ -6,11 +6,11 @@ import { getPublishedPosts } from "../../lib/posts";
 const posts = (await getPublishedPosts()).filter((post) => post.data.category === "notes");
 ---
 
-<BaseLayout title="Notes" description="技術と道具についての短いノート。">
+<BaseLayout title="Notes" description="Short notes on technology and the tools we use.">
   <section class="section-page">
     <header class="section-heading">
       <h1>Notes</h1>
-      <p>旅先の開発環境、軽い道具、考え方。日々の制作を少し静かにするための技術メモ。</p>
+      <p>Portable development environments, lightweight tools, and ideas for a calmer creative practice.</p>
     </header>
     <div>{posts.map((post) => <PostRow post={post} />)}</div>
   </section>

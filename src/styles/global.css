@@ -10,7 +10,7 @@
   --color-line: #bfb7aa;
   --color-line-soft: #d4cdc1;
   --font-display: "Bodoni 72", "Bodoni MT", Didot, "Times New Roman", serif;
-  --font-serif-ja: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  --font-serif: Georgia, "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
   --font-sans: Inter, "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
@@ -125,7 +125,7 @@ img {
 
 .section-heading p {
   color: var(--color-muted);
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   line-height: 2;
   margin: 0;
 }

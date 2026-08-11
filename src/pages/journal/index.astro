@@ -6,11 +6,11 @@ import { getPublishedPosts } from "../../lib/posts";
 const posts = await getPublishedPosts();
 ---
 
-<BaseLayout title="Journal" description="旅と技術についてのすべての記事。">
+<BaseLayout title="Journal" description="All essays on travel, places, tools, and technology.">
   <section class="section-page">
     <header class="section-heading">
       <h1>Journal</h1>
-      <p>移動すること、つくること、立ち止まること。その間に見つけたものを記録します。</p>
+      <p>Notes on moving, making, and pausing—and what becomes visible in between.</p>
     </header>
     <div>{posts.map((post) => <PostRow post={post} />)}</div>
   </section>

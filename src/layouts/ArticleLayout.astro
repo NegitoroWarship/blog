@@ -8,10 +8,10 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { title, description, pubDate, updatedDate, category, tags } = post.data;
+const { title, description, pubDate, updatedDate, category, tags, language } = post.data;
 ---
 
-<BaseLayout title={title} description={description} type="article">
+<BaseLayout title={title} description={description} type="article" language={language}>
   <article class="article">
     <header class="article-header">
       <p class="eyebrow">{categoryLabels[category]}</p>
@@ -19,7 +19,7 @@ const { title, description, pubDate, updatedDate, category, tags } = post.data;
       <p class="dek">{description}</p>
       <div class="article-meta">
         <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
-        {updatedDate && <span>更新 {formatDate(updatedDate)}</span>}
+        {updatedDate && <span>Updated {formatDate(updatedDate)}</span>}
       </div>
     </header>
 
@@ -28,7 +28,7 @@ const { title, description, pubDate, updatedDate, category, tags } = post.data;
     </div>
 
     {tags.length > 0 && (
-      <footer class="article-tags" aria-label="タグ">
+      <footer class="article-tags" aria-label="Tags">
         {tags.map((tag) => <span>#{tag}</span>)}
       </footer>
     )}
@@ -57,7 +57,7 @@ const { title, description, pubDate, updatedDate, category, tags } = post.data;
   }
 
   h1 {
-    font-family: var(--font-serif-ja);
+    font-family: var(--font-serif);
     font-size: clamp(2.3rem, 6vw, 4.8rem);
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -84,7 +84,7 @@ const { title, description, pubDate, updatedDate, category, tags } = post.data;
   }
 
   .article-body {
-    font-family: var(--font-serif-ja);
+    font-family: var(--font-serif);
     font-size: clamp(1rem, 1.8vw, 1.12rem);
     line-height: 2.15;
     margin-inline: auto;

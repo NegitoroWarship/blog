@@ -11,13 +11,11 @@ export async function getPublishedPosts(): Promise<BlogPost[]> {
 }
 
 export function formatDate(date: Date): string {
-  return new Intl.DateTimeFormat("ja-JP", {
+  return new Intl.DateTimeFormat("en-US", {
     year: "numeric",
-    month: "2-digit",
+    month: "short",
     day: "2-digit",
-  })
-    .format(date)
-    .replaceAll("/", ".");
+  }).format(date);
 }
 
 export const categoryLabels = {

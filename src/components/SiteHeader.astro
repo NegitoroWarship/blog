@@ -12,12 +12,12 @@ const links = [
 
 <header class="site-header">
   <div class="masthead-row">
-    <a class="brand" href={withBase()} aria-label="Monsoon Letter ホーム">
+    <a class="brand" href={withBase()} aria-label="Monsoon Letter home">
       <span class="brand-name">Monsoon Letter</span>
-      <span class="brand-subtitle">雨季の木陰で読む、小さな旅行・技術誌</span>
+      <span class="brand-subtitle">Travel, tools, and quiet technology.</span>
     </a>
 
-    <nav aria-label="メインナビゲーション">
+    <nav aria-label="Primary navigation">
       <ul>
         {
           links.map((link) => (
@@ -65,7 +65,7 @@ const links = [
   }
 
   .brand-subtitle {
-    font-family: var(--font-serif-ja);
+    font-family: var(--font-serif);
     font-size: clamp(0.76rem, 1.2vw, 0.94rem);
     letter-spacing: 0.12em;
   }

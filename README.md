@@ -1,8 +1,8 @@
 # Monsoon Letter
 
-雨季の木陰で読む、小さな旅行・技術誌。
+Travel, tools, and quiet technology.
 
-Astroで静的生成し、GitHub ActionsからGitHub Pagesへ公開する個人ブログです。旅、建築、道具、Web開発について、余白のある編集デザインで記録します。
+A personal editorial blog about travel, architecture, tools, and web development. Astro generates the static site, and GitHub Actions prepares it for GitHub Pages.
 
 ## Stack
 
@@ -18,7 +18,7 @@ pnpm install
 pnpm dev
 ```
 
-本番相当の確認は次のコマンドで行います。
+Run the production checks with:
 
 ```sh
 pnpm build
@@ -27,14 +27,15 @@ pnpm preview
 
 ## Writing
 
-記事は`src/content/blog`へMarkdownとして追加します。公開前の記事にはFront Matterで`draft: true`を指定してください。
+Add articles as Markdown files in `src/content/blog`. Set `draft: true` in the front matter for anything that is not ready to publish.
 
 ```yaml
 ---
-title: 記事タイトル
-description: 記事の概要
+title: Article title
+description: A short summary of the article
 pubDate: 2026-08-11
 category: notes
+language: en
 tags:
   - Astro
 draft: true
@@ -43,10 +44,10 @@ draft: true
 
 ## Deployment
 
-リポジトリのSettings → Pages → Build and deploymentで、Sourceを`GitHub Actions`に設定します。`main`へのpushで自動的にビルド・公開されます。
+The workflow validates every push to `main`. While the repository is private on GitHub Free, it builds the site without attempting a Pages deployment.
 
-通常のプロジェクトリポジトリでは、AstroがGitHub Actions上で`/<repository-name>/`を自動設定します。独自ドメインへ移行するときは、Actionsに`SITE_URL`と`BASE_PATH`を設定してください。
+When the repository becomes public, the `public` event enables GitHub Pages and deploys the site automatically. Astro derives the `/<repository-name>/` base path in GitHub Actions. For a custom domain, provide `SITE_URL` and `BASE_PATH` in Actions.
 
 ## Visual direction
 
-Tropical Modernismと雨季の静けさを組み合わせた、生成り・深緑・チーク・褪せた藍の編集テーマです。ヒーロー画像はこのプロジェクトのためにAIで生成したオリジナル素材です。
+The visual system combines Tropical Modernism with the stillness of monsoon season: rice-paper ivory, rain green, teak, faded indigo, and muted clay. The hero and social artwork are original AI-generated assets created for this project.
