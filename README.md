@@ -1,6 +1,6 @@
 # Lines in Still Water
 
-Travel, tools, and quiet technology.
+Travel, technology, and life.
 
 A personal editorial blog about travel, architecture, tools, and web development. Astro generates the static site, and GitHub Actions prepares it for GitHub Pages.
 
@@ -36,6 +36,8 @@ Categories are generated automatically from published articles. Use a lowercase 
 title: Article title
 description: A short summary of the article
 pubDate: 2026-08-11
+cover: ./assets/article-slug/cover.webp
+coverAlt: A concise description of the cover image
 category: notes
 language: en
 tags:
@@ -43,6 +45,8 @@ tags:
 draft: true
 ---
 ```
+
+The featured article's `cover` image is also used as the home-page hero. Its path is relative to the article file.
 
 ## Deployment
 

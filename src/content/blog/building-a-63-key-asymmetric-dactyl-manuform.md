@@ -2,6 +2,8 @@
 title: Building a 63-Key Asymmetric Dactyl Manuform
 description: How I designed, printed, hand-wired, and configured a 63-key asymmetric wireless Dactyl Manuform powered by AA batteries.
 pubDate: 2026-08-11
+cover: ./assets/dactyl-manuform/dactyl-finished-desk.webp
+coverAlt: Completed asymmetric Dactyl Manuform keyboard on a desk
 category: notes
 language: en
 tags:
