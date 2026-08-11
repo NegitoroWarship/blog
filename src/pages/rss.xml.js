@@ -5,7 +5,7 @@ export async function GET(context) {
   const posts = await getPublishedPosts();
 
   return rss({
-    title: "Monsoon Letter",
+    title: "Lines in Still Water",
     description: "Travel, tools, and quiet technology.",
     site: context.site,
     items: posts.map((post) => ({

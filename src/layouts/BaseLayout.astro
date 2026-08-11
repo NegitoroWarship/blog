@@ -13,13 +13,13 @@ interface Props {
 }
 
 const {
-  title = "Monsoon Letter",
+  title = "Lines in Still Water",
   description = "Travel, tools, and quiet technology.",
   image = withBase("og.png"),
   type = "website",
   language = "en",
 } = Astro.props;
-const pageTitle = title === "Monsoon Letter" ? title : `${title} | Monsoon Letter`;
+const pageTitle = title === "Lines in Still Water" ? title : `${title} | Lines in Still Water`;
 const canonical = Astro.site
   ? new URL(Astro.url.pathname, Astro.site)
   : Astro.url;
@@ -35,7 +35,7 @@ const socialImage = Astro.site ? new URL(image, Astro.site) : new URL(image, Ast
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f3efe5" />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" type="application/rss+xml" title="Monsoon Letter RSS" href={withBase("rss.xml")} />
+    <link rel="alternate" type="application/rss+xml" title="Lines in Still Water RSS" href={withBase("rss.xml")} />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
