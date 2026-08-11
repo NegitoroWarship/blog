@@ -6,7 +6,7 @@ category: journal
 language: en
 tags:
   - sample
-featured: true
+featured: false
 ---
 
 this is a sample

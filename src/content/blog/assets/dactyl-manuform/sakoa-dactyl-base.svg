@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1068" height="490" viewBox="0 0 1068 490">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="38" y="40" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#171a1f">Dactyl Keymap Lab</text>
+  <text x="38" y="66" font-family="Segoe UI, sans-serif" font-size="12" fill="#6e747d">Base layer · 63 fitted keys · Left 27 / Right 36</text>
+  <text x="38" y="94" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#171a1f">Left hand</text>
+  <text x="546" y="94" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#171a1f">Right hand</text>
+  <rect x="38" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="42" y1="147" x2="98" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="70" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">1</text>
+  <rect x="108" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="112" y1="147" x2="168" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="140" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">2</text>
+  <rect x="178" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="182" y1="147" x2="238" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="210" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">3</text>
+  <rect x="248" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="252" y1="147" x2="308" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="280" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">4</text>
+  <rect x="318" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="322" y1="147" x2="378" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="350" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">5</text>
+  <rect x="388" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="392" y1="147" x2="448" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="420" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">6</text>
+  <rect x="38" y="156" width="64" height="46" rx="5" fill="#fff0f6" stroke="#ed6aa6" stroke-width="1.5"/>
+  <line x1="42" y1="199" x2="98" y2="199" stroke="#ed6aa6" opacity=".55"/>
+  <text x="70" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Tab</text>
+  <rect x="108" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="112" y1="199" x2="168" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="140" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Q</text>
+  <rect x="178" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="182" y1="199" x2="238" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="210" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">W</text>
+  <rect x="248" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="252" y1="199" x2="308" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="280" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">E</text>
+  <rect x="318" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="322" y1="199" x2="378" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="350" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">R</text>
+  <rect x="388" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="392" y1="199" x2="448" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="420" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">T</text>
+  <rect x="38" y="208" width="64" height="46" rx="5" fill="#fff0f6" stroke="#ed6aa6" stroke-width="1.5"/>
+  <line x1="42" y1="251" x2="98" y2="251" stroke="#ed6aa6" opacity=".55"/>
+  <text x="70" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Ctrl</text>
+  <rect x="108" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="112" y1="251" x2="168" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="140" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">A</text>
+  <rect x="178" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="182" y1="251" x2="238" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="210" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">S</text>
+  <rect x="248" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="252" y1="251" x2="308" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="280" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">D</text>
+  <rect x="318" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="322" y1="251" x2="378" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="350" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">F</text>
+  <rect x="388" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="392" y1="251" x2="448" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="420" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">G</text>
+  <rect x="38" y="260" width="64" height="46" rx="5" fill="#fff0f6" stroke="#ed6aa6" stroke-width="1.5"/>
+  <line x1="42" y1="303" x2="98" y2="303" stroke="#ed6aa6" opacity=".55"/>
+  <text x="70" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Shift</text>
+  <rect x="108" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="112" y1="303" x2="168" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="140" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Z</text>
+  <rect x="178" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="182" y1="303" x2="238" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="210" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">X</text>
+  <rect x="248" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="252" y1="303" x2="308" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="280" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">C</text>
+  <rect x="318" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="322" y1="303" x2="378" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="350" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">V</text>
+  <rect x="388" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="392" y1="303" x2="448" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="420" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">B</text>
+  <rect x="546" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="550" y1="147" x2="606" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="578" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">7</text>
+  <rect x="616" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="620" y1="147" x2="676" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="648" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">8</text>
+  <rect x="686" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="690" y1="147" x2="746" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="718" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">9</text>
+  <rect x="756" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="760" y1="147" x2="816" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="788" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">0</text>
+  <rect x="826" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="830" y1="147" x2="886" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="858" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">-</text>
+  <rect x="896" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="900" y1="147" x2="956" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="928" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">=</text>
+  <rect x="966" y="104" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="970" y1="147" x2="1026" y2="147" stroke="#d9dde2" opacity=".55"/>
+  <text x="998" y="131" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">\</text>
+  <rect x="546" y="156" width="64" height="46" rx="5" fill="#e7f3ff" stroke="#4c9ff0" stroke-width="1.5"/>
+  <line x1="550" y1="199" x2="606" y2="199" stroke="#4c9ff0" opacity=".55"/>
+  <text x="578" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Y</text>
+  <rect x="616" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="620" y1="199" x2="676" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="648" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">U</text>
+  <rect x="686" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="690" y1="199" x2="746" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="718" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">I</text>
+  <rect x="756" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="760" y1="199" x2="816" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="788" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">O</text>
+  <rect x="826" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="830" y1="199" x2="886" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="858" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">P</text>
+  <rect x="896" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="900" y1="199" x2="956" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="928" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">[</text>
+  <rect x="966" y="156" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="970" y1="199" x2="1026" y2="199" stroke="#d9dde2" opacity=".55"/>
+  <text x="998" y="183" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">]</text>
+  <rect x="546" y="208" width="64" height="46" rx="5" fill="#e7f3ff" stroke="#4c9ff0" stroke-width="1.5"/>
+  <line x1="550" y1="251" x2="606" y2="251" stroke="#4c9ff0" opacity=".55"/>
+  <text x="578" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">H</text>
+  <rect x="616" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="620" y1="251" x2="676" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="648" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">J</text>
+  <rect x="686" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="690" y1="251" x2="746" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="718" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">K</text>
+  <rect x="756" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="760" y1="251" x2="816" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="788" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">L</text>
+  <rect x="826" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="830" y1="251" x2="886" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="858" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">;</text>
+  <rect x="896" y="208" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="900" y1="251" x2="956" y2="251" stroke="#d9dde2" opacity=".55"/>
+  <text x="928" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">&apos;</text>
+  <rect x="966" y="208" width="64" height="46" rx="5" fill="#fff0f6" stroke="#ed6aa6" stroke-width="1.5"/>
+  <line x1="970" y1="251" x2="1026" y2="251" stroke="#ed6aa6" opacity=".55"/>
+  <text x="998" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Enter</text>
+  <rect x="546" y="260" width="64" height="46" rx="5" fill="#e7f3ff" stroke="#4c9ff0" stroke-width="1.5"/>
+  <line x1="550" y1="303" x2="606" y2="303" stroke="#4c9ff0" opacity=".55"/>
+  <text x="578" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">N</text>
+  <rect x="616" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="620" y1="303" x2="676" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="648" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">M</text>
+  <rect x="686" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="690" y1="303" x2="746" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="718" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">,</text>
+  <rect x="756" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="760" y1="303" x2="816" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="788" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">.</text>
+  <rect x="826" y="260" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="830" y1="303" x2="886" y2="303" stroke="#d9dde2" opacity=".55"/>
+  <text x="858" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">/</text>
+  <rect x="896" y="260" width="64" height="46" rx="5" fill="#f1ecff" stroke="#9578e9" stroke-width="1.5"/>
+  <line x1="900" y1="303" x2="956" y2="303" stroke="#9578e9" opacity=".55"/>
+  <text x="928" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">↑</text>
+  <rect x="966" y="260" width="64" height="46" rx="5" fill="#fff0f6" stroke="#ed6aa6" stroke-width="1.5"/>
+  <line x1="970" y1="303" x2="1026" y2="303" stroke="#ed6aa6" opacity=".55"/>
+  <text x="998" y="287" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Shift</text>
+  <rect x="686" y="312" width="64" height="46" rx="5" fill="#fff3e8" stroke="#e79347" stroke-width="1.5"/>
+  <line x1="690" y1="355" x2="746" y2="355" stroke="#e79347" opacity=".55"/>
+  <text x="718" y="339" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">MO(Fn)</text>
+  <rect x="756" y="312" width="64" height="46" rx="5" fill="#f2f3f5" stroke="#d9dde2" stroke-width="1.5"/>
+  <line x1="760" y1="355" x2="816" y2="355" stroke="#d9dde2" opacity=".55"/>
+  <text x="788" y="339" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">`</text>
+  <rect x="826" y="312" width="64" height="46" rx="5" fill="#f1ecff" stroke="#9578e9" stroke-width="1.5"/>
+  <line x1="830" y1="355" x2="886" y2="355" stroke="#9578e9" opacity=".55"/>
+  <text x="858" y="339" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">←</text>
+  <rect x="896" y="312" width="64" height="46" rx="5" fill="#f1ecff" stroke="#9578e9" stroke-width="1.5"/>
+  <line x1="900" y1="355" x2="956" y2="355" stroke="#9578e9" opacity=".55"/>
+  <text x="928" y="339" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">↓</text>
+  <rect x="966" y="312" width="64" height="46" rx="5" fill="#f1ecff" stroke="#9578e9" stroke-width="1.5"/>
+  <line x1="970" y1="355" x2="1026" y2="355" stroke="#9578e9" opacity=".55"/>
+  <text x="998" y="339" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">→</text>
+  <rect x="111" y="388" width="84" height="52" rx="5" fill="#eaf8ee" stroke="#65ba7d" stroke-width="1.5"/>
+  <line x1="115" y1="437" x2="191" y2="437" stroke="#65ba7d" opacity=".55"/>
+  <text x="153" y="418" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Win</text>
+  <rect x="203" y="388" width="84" height="52" rx="5" fill="#eaf8ee" stroke="#65ba7d" stroke-width="1.5"/>
+  <line x1="207" y1="437" x2="283" y2="437" stroke="#65ba7d" opacity=".55"/>
+  <text x="245" y="418" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Alt</text>
+  <rect x="295" y="388" width="84" height="52" rx="5" fill="#eaf8ee" stroke="#65ba7d" stroke-width="1.5"/>
+  <line x1="299" y1="437" x2="375" y2="437" stroke="#65ba7d" opacity=".55"/>
+  <text x="337" y="418" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Space</text>
+  <rect x="654" y="388" width="84" height="52" rx="5" fill="#eaf8ee" stroke="#65ba7d" stroke-width="1.5"/>
+  <line x1="658" y1="437" x2="734" y2="437" stroke="#65ba7d" opacity=".55"/>
+  <text x="696" y="418" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Esc</text>
+  <rect x="746" y="388" width="84" height="52" rx="5" fill="#eaf8ee" stroke="#65ba7d" stroke-width="1.5"/>
+  <line x1="750" y1="437" x2="826" y2="437" stroke="#65ba7d" opacity=".55"/>
+  <text x="788" y="418" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Bksp</text>
+  <rect x="838" y="388" width="84" height="52" rx="5" fill="#eaf8ee" stroke="#65ba7d" stroke-width="1.5"/>
+  <line x1="842" y1="437" x2="918" y2="437" stroke="#65ba7d" opacity=".55"/>
+  <text x="880" y="418" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#171a1f">Del</text>
+</svg>
