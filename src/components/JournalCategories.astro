@@ -1,0 +1,61 @@
+---
+import { withBase } from "../lib/paths";
+
+interface Props {
+  current: "journal" | "places" | "notes";
+}
+
+const { current } = Astro.props;
+const links = [
+  { id: "journal", label: "JOURNAL", href: withBase("journal/") },
+  { id: "places", label: "PLACES", href: withBase("places/") },
+  { id: "notes", label: "NOTES", href: withBase("notes/") },
+] as const;
+---
+
+<nav class="journal-categories" aria-label="Journal categories">
+  <ul>
+    {
+      links.map((link) => (
+        <li>
+          <a href={link.href} aria-current={current === link.id ? "page" : undefined}>
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .journal-categories {
+    border-bottom: 1px solid var(--color-line-soft);
+    border-top: 1px solid var(--color-line-soft);
+    margin-bottom: 1rem;
+    padding: 0.85rem 0;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.8rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: var(--color-muted);
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.3rem;
+  }
+
+  a:hover,
+  a[aria-current="page"] {
+    color: var(--color-clay);
+    text-decoration-color: currentColor;
+  }
+</style>

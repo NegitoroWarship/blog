@@ -1,4 +1,5 @@
 ---
+import JournalCategories from "../../components/JournalCategories.astro";
 import PostRow from "../../components/PostRow.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPublishedPosts } from "../../lib/posts";
@@ -12,6 +13,7 @@ const posts = await getPublishedPosts();
       <h1>Journal</h1>
       <p>Notes on moving, making, and pausing—and what becomes visible in between.</p>
     </header>
+    <JournalCategories current="journal" />
     <div>{posts.map((post) => <PostRow post={post} />)}</div>
   </section>
 </BaseLayout>

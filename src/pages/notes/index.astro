@@ -1,4 +1,5 @@
 ---
+import JournalCategories from "../../components/JournalCategories.astro";
 import PostRow from "../../components/PostRow.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPublishedPosts } from "../../lib/posts";
@@ -12,6 +13,7 @@ const posts = (await getPublishedPosts()).filter((post) => post.data.category ==
       <h1>Notes</h1>
       <p>Portable development environments, lightweight tools, and ideas for a calmer creative practice.</p>
     </header>
+    <JournalCategories current="notes" />
     <div>{posts.map((post) => <PostRow post={post} />)}</div>
   </section>
 </BaseLayout>

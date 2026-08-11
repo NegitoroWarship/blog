@@ -2,11 +2,18 @@
 import { withBase } from "../lib/paths";
 
 const currentPath = Astro.url.pathname;
+const journalPaths = [withBase("journal/"), withBase("places/"), withBase("notes/")];
 const links = [
-  { label: "JOURNAL", href: withBase("journal/") },
-  { label: "PLACES", href: withBase("places/") },
-  { label: "NOTES", href: withBase("notes/") },
-  { label: "ABOUT", href: withBase("about/") },
+  {
+    label: "JOURNAL",
+    href: withBase("journal/"),
+    isCurrent: journalPaths.some((path) => currentPath.startsWith(path)),
+  },
+  {
+    label: "ABOUT",
+    href: withBase("about/"),
+    isCurrent: currentPath.startsWith(withBase("about/")),
+  },
 ];
 ---
 
@@ -24,7 +31,7 @@ const links = [
             <li>
               <a
                 href={link.href}
-                aria-current={currentPath.startsWith(link.href) ? "page" : undefined}
+                aria-current={link.isCurrent ? "page" : undefined}
               >
                 {link.label}
               </a>
