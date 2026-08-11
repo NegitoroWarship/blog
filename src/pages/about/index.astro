@@ -2,37 +2,14 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="About" description="About Lines in Still Water.">
-  <section class="about section-page">
+<BaseLayout
+  title="About"
+  description="A personal journal about travel, books, code, and fishing."
+>
+  <section class="section-page">
     <header class="section-heading">
       <h1>About</h1>
-      <p>Travel, tools, and quiet technology.</p>
+      <p>A personal journal about travel, books, code, and fishing.</p>
     </header>
-
-    <div class="about-body">
-      <p>
-        Lines in Still Water is an independent journal about the quiet space between travel and technology.
-        It follows Southeast Asian cities and architecture, everyday tools, and the practice of making for the web.
-      </p>
-      <p>
-        It is designed as a place to pause rather than rush toward a conclusion—to read as though waiting out the rain.
-      </p>
-    </div>
   </section>
 </BaseLayout>
-
-<style>
-  .about-body {
-    font-family: var(--font-serif);
-    font-size: clamp(1.05rem, 2vw, 1.25rem);
-    line-height: 2.25;
-    margin-left: min(20vw, 17rem);
-    max-width: 45rem;
-  }
-
-  @media (max-width: 720px) {
-    .about-body {
-      margin-left: 0;
-    }
-  }
-</style>
