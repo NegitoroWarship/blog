@@ -492,3 +492,7 @@ Windows may display a warning after copying a UF2 file even when flashing succee
 ![Front view of the completed asymmetric Dactyl Manuform keyboard](./assets/dactyl-manuform/dactyl-finished-front.webp)
 
 The finished keyboard meets the original goals: an asymmetric 63-key layout, a fully wireless split, and AA-battery power. I still see room to improve the position of the Enter key on the rightmost column, but of all the split keyboards I have tried, this is the one that feels most likely to remain in long-term use.
+
+## Update (August 16, 2026)
+
+Because I use the Fn key more often than the Esc key and wanted to press it with my thumb, I swapped their positions.
