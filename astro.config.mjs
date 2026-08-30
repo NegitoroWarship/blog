@@ -6,7 +6,8 @@ const [repositoryOwner = "", repositoryName = ""] = (
 ).split("/");
 const isGitHubBuild = process.env.GITHUB_ACTIONS === "true";
 const isUserSite =
-  repositoryName && repositoryName === `${repositoryOwner}.github.io`;
+  Boolean(repositoryName) &&
+  repositoryName.toLowerCase() === `${repositoryOwner}.github.io`.toLowerCase();
 
 const site =
   process.env.SITE_URL ??

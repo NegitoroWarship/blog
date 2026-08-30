@@ -24,6 +24,16 @@ const canonical = Astro.site
   ? new URL(Astro.url.pathname, Astro.site)
   : Astro.url;
 const socialImage = Astro.site ? new URL(image, Astro.site) : new URL(image, Astro.url);
+const siteName = "Lines in Still Water";
+const homeUrl = Astro.site ? new URL(withBase(""), Astro.site).href : withBase("");
+const isHome = canonical.href === homeUrl;
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteName,
+  alternateName: siteName,
+  url: homeUrl,
+};
 ---
 
 <!doctype html>
@@ -37,6 +47,7 @@ const socialImage = Astro.site ? new URL(image, Astro.site) : new URL(image, Ast
     <meta name="theme-color" content="#f3efe5" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" type="application/rss+xml" title="Lines in Still Water RSS" href={withBase("rss.xml")} />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
@@ -47,6 +58,9 @@ const socialImage = Astro.site ? new URL(image, Astro.site) : new URL(image, Ast
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImage} />
     <title>{pageTitle}</title>
+    {isHome && (
+      <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    )}
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
