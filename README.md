@@ -2,14 +2,14 @@
 
 Travel, technology, and life.
 
-A personal editorial blog about travel, architecture, tools, and web development. Astro generates the static site, and GitHub Actions prepares it for GitHub Pages.
+A personal editorial blog about travel, architecture, tools, and web development. Astro generates the static site, and Cloudflare Workers Builds deploys it as Workers static assets.
 
 ## Stack
 
 - Astro
 - Markdown Content Collections
-- GitHub Actions
-- GitHub Pages
+- Cloudflare Workers Builds
+- Workers static assets
 
 ## Local development
 
@@ -50,9 +50,15 @@ The featured article's `cover` image is also used as the home-page hero. Its pat
 
 ## Deployment
 
-The workflow validates every push to `main`. While the repository is private on GitHub Free, it builds the site without attempting a Pages deployment.
+Every push to `main` triggers Workers Builds, which runs `pnpm build` and then
+`npx wrangler deploy`. The static output in `dist/` is served by Workers static
+assets; `wrangler.jsonc` holds the asset routing.
 
-When the repository becomes public, the `public` event enables GitHub Pages and deploys the site automatically. Astro derives the `/<repository-name>/` base path in GitHub Actions. For a custom domain, provide `SITE_URL` and `BASE_PATH` in Actions.
+`SITE_URL` must be set as a build variable in the Workers Builds settings — it
+is the origin every canonical URL, sitemap entry and RSS link is built against.
+The build fails fast when it is missing in CI, because the silent fallback would
+otherwise publish `http://localhost:4321` URLs. Moving to a custom domain later
+means changing that one variable and nothing else.
 
 ## Visual direction
 

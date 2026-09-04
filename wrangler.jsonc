@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lines-in-still-water",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    // Astro's static output. `auto-trailing-slash` matches the site's
+    // `trailingSlash: "always"` directory output: `/posts/x/index.html` is
+    // served at `/posts/x/`, and `/posts/x` redirects to it.
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

@@ -30,6 +30,10 @@ jobs:
 
       - name: Build and upload Astro site
         uses: withastro/action@v6
+        env:
+          # Kept alive only until the Cloudflare cutover; the site itself is
+          # moving to Workers static assets.
+          SITE_URL: https://negitorowarship.github.io
         with:
           node-version: 24
           package-manager: pnpm@11.16.0
