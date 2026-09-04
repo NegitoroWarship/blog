@@ -55,11 +55,10 @@ Every push to `main` triggers Workers Builds, which runs `pnpm build` and then
 assets; `wrangler.jsonc` holds the asset routing. GitHub only hosts the source —
 nothing deploys from there.
 
-`SITE_URL` must be set as a build variable in the Workers Builds settings — it
-is the origin every canonical URL, sitemap entry and RSS link is built against.
-The build fails fast when it is missing in CI, because the silent fallback would
-otherwise publish `http://localhost:4321` URLs. Moving to a custom domain later
-means changing that one variable and nothing else.
+The deployed origin is baked into `astro.config.mjs` rather than supplied as a
+build variable, so a missing or malformed dashboard setting cannot silently
+publish wrong canonical URLs. `SITE_URL` overrides it, which is all a move to a
+custom domain needs.
 
 ## Visual direction
 
