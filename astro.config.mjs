@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 // domain needs.
 const site =
   process.env.SITE_URL ??
-  "https://lines-in-still-water.negitorowarship.workers.dev";
+  "https://blog.negitorowarship.workers.dev";
 
 export default defineConfig({
   site,

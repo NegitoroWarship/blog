@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "lines-in-still-water",
+  "name": "blog",
   "compatibility_date": "2026-09-01",
   "assets": {
     // Astro's static output. `auto-trailing-slash` matches the site's
