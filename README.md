@@ -52,7 +52,8 @@ The featured article's `cover` image is also used as the home-page hero. Its pat
 
 Every push to `main` triggers Workers Builds, which runs `pnpm build` and then
 `npx wrangler deploy`. The static output in `dist/` is served by Workers static
-assets; `wrangler.jsonc` holds the asset routing.
+assets; `wrangler.jsonc` holds the asset routing. GitHub only hosts the source —
+nothing deploys from there.
 
 `SITE_URL` must be set as a build variable in the Workers Builds settings — it
 is the origin every canonical URL, sitemap entry and RSS link is built against.
