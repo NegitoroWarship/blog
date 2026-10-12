@@ -1,15 +1,11 @@
 import type { APIRoute } from "astro";
-import { withBase } from "../lib/paths";
 import { getSitemapSections } from "../lib/sitemap";
 
 export const GET: APIRoute = async ({ site }) => {
   const sections = await getSitemapSections();
-  const links = [
-    ...sections.pages,
-    { href: withBase("sitemap/"), label: "Sitemap" },
-    ...sections.categories,
-    ...sections.articles,
-  ];
+  // Same URL set as the XML sitemap: category archives and the HTML sitemap
+  // stay reachable through links but are not submitted.
+  const links = [...sections.pages, ...sections.articles];
   const origin = site ?? new URL("http://localhost:4321");
   const urls = links.map((link) => new URL(link.href, origin).href);
 
